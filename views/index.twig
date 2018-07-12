@@ -1,0 +1,16 @@
+{% include 'inc/header.twig' %}
+
+<h1>Début de cours sur Node - Express</h1>
+
+<ul>
+{% for i in 0..maxNumber %}
+  <li>{{ i }}</li>
+{% endfor %}
+</ul>
+
+<form class="" action="addTodo" method="post">
+  <input type="text" name="task" value=""><br>
+  <input type="submit" name="" value="Add">
+</form>
+
+{% include 'inc/footer.twig' %}
